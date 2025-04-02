@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --primary: #208CFC;
+  }
+
+  /* Custom Font Loading */
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Mariana';
+    src: url('/fonts/Mariana-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-black;
+    font-size: 16px;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary;
+  }
+  
+  .btn-default {
+    @apply bg-black text-white hover:bg-black/90;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90;
+  }
+  
+  .btn-outline {
+    @apply bg-white border border-gray-200 hover:bg-gray-hover;
+  }
+  
+  .btn-sm {
+    @apply h-9 px-3;
+  }
+  
+  .btn-default {
+    @apply h-10 px-4;
+  }
+  
+  .btn-lg {
+    @apply h-11 px-5;
+  }
+  
+  .btn-trial {
+    @apply h-14 px-6;
+  }
+}
+
+/* Title animation effects */
+.title-animation {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.is-visible .title-animation,
+.fade-in-section.is-visible .title-animation,
+.title-animation.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title-shimmer {
+  background: linear-gradient(to right, #208CFC, #6574cd, #208CFC);
+  background-size: 200% 100%;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 3s infinite;
+}
+
+.title-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.title-highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(32, 140, 252, 0.2);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: highlightReveal 0.8s ease-out 0.2s forwards;
+}
+
+@keyframes highlightReveal {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* Additional section animation classes */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.stagger-item.is-visible {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.slide-in-left.is-visible,
+.slide-in-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bounce-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease-out, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bounce-in.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.title-underline {
+  position: relative;
+}
+
+.title-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary, #208CFC);
+  transition: width 0.5s ease-out 0.2s;
+}
+
+.title-underline.is-visible:after {
+  width: 100%;
+}
+
+/* Apply number font to counter elements and numeric displays */
+.counter,
+[data-target],
+.text-3xl,
+.text-4xl,
+.text-5xl,
+p.text-3xl,
+p.text-4xl,
+p.text-5xl,
+div.text-center p.text-3xl,
+div.text-center p.text-4xl {
+  font-family: 'DM Sans', sans-serif;
+  font-feature-settings: "tnum" on, "lnum" on;
+  font-weight: 800 !important;
+} 

@@ -1,0 +1,12 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#208CFC" fill-opacity="0.1"/>
+  <rect x="1" y="1" width="798" height="448" stroke="#208CFC" stroke-opacity="0.2" stroke-width="2"/>
+  <path d="M400 225H401V226H400V225Z" fill="#208CFC" fill-opacity="0.2"/>
+  <path d="M300 150H500V300H300V150Z" stroke="#208CFC" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M350 200L450 200" stroke="#208CFC" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M350 225L450 225" stroke="#208CFC" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M350 250L450 250" stroke="#208CFC" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M383 175L417 175" stroke="#208CFC" stroke-opacity="0.8" stroke-width="2"/>
+  <circle cx="400" cy="225" r="75" stroke="#208CFC" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="400" y="335" text-anchor="middle" font-family="Arial" font-size="16" fill="#208CFC">Placeholder Image</text>
+</svg> 

@@ -13,9 +13,6 @@ export default function Footer() {
                 className="h-8 brightness-0 invert" 
               />
             </Link>
-            <p className="text-sm text-gray-400 max-w-xs">
-              AI-powered social media management platform that helps you grow your online presence.
-            </p>
           </div>
           
           <div className="flex flex-col gap-4">

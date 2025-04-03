@@ -29,9 +29,51 @@ export default function ContentGeneratorPage() {
               </p>
               
               <div className="mt-10">
-                <Link to="/signup" className="w-full sm:w-auto px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200 inline-block">
+                <button 
+                  className="w-full sm:w-auto px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200 inline-block"
+                  onClick={() => {}}
+                >
                   Generate Content Now
-                </Link>
+                </button>
+              </div>
+
+              <div className="mt-2 flex gap-2">
+                <button 
+                  className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors"
+                  onClick={() => {}}
+                >
+                  Use This
+                </button>
+                <button 
+                  className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors"
+                  onClick={() => {}}
+                >
+                  Generate More
+                </button>
+              </div>
+
+              <button 
+                className="mt-6 w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
+                onClick={() => {}}
+              >
+                <Sparkles className="w-5 h-5" />
+                Generate More Ideas
+              </button>
+
+              <div className="mt-6 flex gap-3">
+                <button 
+                  className="flex-1 py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
+                  onClick={() => {}}
+                >
+                  <Sparkles className="w-5 h-5" />
+                  Generate
+                </button>
+                <button 
+                  className="px-3 py-3 bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition-colors duration-200"
+                  onClick={() => {}}
+                >
+                  <Settings className="w-5 h-5" />
+                </button>
               </div>
             </div>
 
@@ -233,10 +275,51 @@ export default function ContentGeneratorPage() {
                   </div>
                 </div>
 
-                <button className="mt-6 w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2">
+                <button 
+                  className="mt-6 w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
+                  onClick={() => {}}
+                >
                   <Sparkles className="w-5 h-5" />
                   Generate More Variations
                 </button>
+
+                <div className="mt-6 flex gap-3">
+                  <button 
+                    className="flex-1 py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
+                    onClick={() => {}}
+                  >
+                    <Sparkles className="w-5 h-5" />
+                    Generate
+                  </button>
+                  <button 
+                    className="px-3 py-3 bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition-colors duration-200"
+                    onClick={() => {}}
+                  >
+                    <Settings className="w-5 h-5" />
+                  </button>
+                </div>
+
+                <button 
+                  className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors"
+                  onClick={() => {}}
+                >
+                  Use This
+                </button>
+                <button 
+                  className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors"
+                  onClick={() => {}}
+                >
+                  Generate More
+                </button>
+
+                {/* Keep the final CTA as a Link */}
+                <Link 
+                  to="/signup"
+                  className="inline-flex items-center px-8 py-4 bg-[#208CFC] text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200"
+                >
+                  Start Creating
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import { BookOpen, Users, Target, Star, Calendar, TrendingUp, Award, CheckCircle, Clock, Play, Trophy, MessageSquare, Video } from 'lucide-react'
+import { BookOpen, Users, Target, Star, Calendar, TrendingUp, Award, CheckCircle, Clock, Play, Trophy, MessageSquare, Video, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 export default function InstagramCoachingPage() {
@@ -352,9 +352,13 @@ export default function InstagramCoachingPage() {
             <p className="text-xl text-gray-600 mb-8">
               Join successful creators who transformed their Instagram presence with our coaching.
             </p>
-            <button className="btn btn-primary btn-lg hover:scale-105 transition-transform">
+            <Link 
+              to="/signup"
+              className="inline-flex items-center px-8 py-4 bg-[#208CFC] text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200"
+            >
               Start Your Journey
-            </button>
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>

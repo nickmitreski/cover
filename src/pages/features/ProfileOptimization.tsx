@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import { ArrowRight, Sparkles, Target, TrendingUp, Eye, Camera, Layout, Palette, Brush, Wand2, LineChart, ArrowLeftRight, Shuffle } from 'lucide-react'
+import { ArrowRight, Sparkles, Target, TrendingUp, Eye, Camera, Layout, Palette, Brush, Wand2, LineChart, ArrowLeftRight, Shuffle, CheckCircle, Heart, MessageCircle, Users } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 export default function ProfileOptimizationPage() {
@@ -37,64 +37,156 @@ export default function ProfileOptimizationPage() {
                     Start Optimization
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
-                  <button className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#208CFC] text-[#208CFC] rounded-lg font-semibold hover:bg-[#208CFC]/5 transition-colors duration-200">
-                    View Examples
-                  </button>
                 </div>
               </div>
 
               {/* Right Content - Before/After Preview */}
-              <div className="relative">
-                <div className="grid grid-cols-2 gap-6">
+              <div className="lg:col-span-1">
+                <div className="grid grid-cols-2 gap-8">
                   {/* Before Profile */}
-                  <div className="bg-white rounded-xl shadow-lg p-4">
-                    <div className="text-center mb-4">
-                      <span className="text-sm font-medium text-gray-500">BEFORE</span>
-                    </div>
-                    <div className="w-20 h-20 mx-auto bg-gray-200 rounded-full mb-4"></div>
-                    <div className="space-y-2">
-                      <div className="h-4 bg-gray-100 rounded w-3/4 mx-auto"></div>
-                      <div className="h-3 bg-gray-100 rounded w-1/2 mx-auto"></div>
-                    </div>
-                    <div className="mt-4 grid grid-cols-3 gap-2">
-                      <div className="aspect-square bg-gray-100 rounded"></div>
-                      <div className="aspect-square bg-gray-100 rounded"></div>
-                      <div className="aspect-square bg-gray-100 rounded"></div>
+                  <div className="bg-white p-6 rounded-xl shadow-lg">
+                    <div className="text-sm font-medium text-gray-500 mb-4">BEFORE</div>
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-4">
+                        <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                          <Camera className="w-6 h-6 text-gray-400" />
+                        </div>
+                        <div className="flex-1">
+                          <div className="h-4 bg-gray-100 rounded w-3/4 mb-2"></div>
+                          <div className="h-3 bg-gray-100 rounded w-1/2"></div>
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-3 gap-2 text-center text-sm">
+                        <div className="p-2 bg-gray-50 rounded">
+                          <div className="font-bold text-gray-700">284</div>
+                          <div className="text-gray-500">Posts</div>
+                        </div>
+                        <div className="p-2 bg-gray-50 rounded">
+                          <div className="font-bold text-gray-700">2.1k</div>
+                          <div className="text-gray-500">Followers</div>
+                        </div>
+                        <div className="p-2 bg-gray-50 rounded">
+                          <div className="font-bold text-gray-700">890</div>
+                          <div className="text-gray-500">Following</div>
+                        </div>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="h-3 bg-gray-100 rounded w-full"></div>
+                        <div className="h-3 bg-gray-100 rounded w-4/5"></div>
+                        <div className="h-3 bg-gray-100 rounded w-2/3"></div>
+                      </div>
+                      <div className="grid grid-cols-3 gap-2">
+                        <div className="aspect-square bg-gray-100 rounded"></div>
+                        <div className="aspect-square bg-gray-100 rounded"></div>
+                        <div className="aspect-square bg-gray-100 rounded"></div>
+                      </div>
+                      <div className="flex items-center justify-between text-sm text-gray-500 pt-2">
+                        <div className="flex items-center gap-1">
+                          <Heart className="w-4 h-4" />
+                          <span>24 avg</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <MessageCircle className="w-4 h-4" />
+                          <span>3 avg</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Eye className="w-4 h-4" />
+                          <span>1.2%</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   {/* After Profile */}
-                  <div className="bg-white rounded-xl shadow-lg p-4 border-2 border-[#208CFC]">
-                    <div className="text-center mb-4">
-                      <span className="text-sm font-medium text-[#208CFC]">AFTER</span>
+                  <div className="bg-white p-6 rounded-xl shadow-lg relative">
+                    <div className="text-sm font-medium text-[#208CFC] mb-4">AFTER</div>
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-4">
+                        <div className="w-16 h-16 bg-[#208CFC]/10 rounded-full flex items-center justify-center relative">
+                          <Camera className="w-6 h-6 text-[#208CFC]" />
+                          <div className="absolute -top-1 -right-1 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
+                            <Sparkles className="w-4 h-4 text-yellow-500" />
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <div className="h-4 bg-[#208CFC]/10 rounded w-3/4 mb-2"></div>
+                          <div className="h-3 bg-[#208CFC]/10 rounded w-1/2"></div>
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-3 gap-2 text-center text-sm">
+                        <div className="p-2 bg-[#208CFC]/5 rounded">
+                          <div className="font-bold text-[#208CFC]">412</div>
+                          <div className="text-gray-500">Posts</div>
+                        </div>
+                        <div className="p-2 bg-[#208CFC]/5 rounded">
+                          <div className="font-bold text-[#208CFC]">7.2k</div>
+                          <div className="text-gray-500">Followers</div>
+                        </div>
+                        <div className="p-2 bg-[#208CFC]/5 rounded">
+                          <div className="font-bold text-[#208CFC]">1.2k</div>
+                          <div className="text-gray-500">Following</div>
+                        </div>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="h-3 bg-[#208CFC]/10 rounded w-full"></div>
+                        <div className="h-3 bg-[#208CFC]/10 rounded w-4/5"></div>
+                        <div className="h-3 bg-[#208CFC]/10 rounded w-2/3"></div>
+                      </div>
+                      <div className="grid grid-cols-3 gap-2">
+                        <div className="aspect-square bg-[#208CFC]/10 rounded relative group">
+                          <div className="absolute inset-0 bg-[#208CFC]/20 rounded opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        </div>
+                        <div className="aspect-square bg-[#208CFC]/10 rounded relative group">
+                          <div className="absolute inset-0 bg-[#208CFC]/20 rounded opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        </div>
+                        <div className="aspect-square bg-[#208CFC]/10 rounded relative group">
+                          <div className="absolute inset-0 bg-[#208CFC]/20 rounded opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between text-sm text-[#208CFC] pt-2">
+                        <div className="flex items-center gap-1">
+                          <Heart className="w-4 h-4" />
+                          <span>186 avg</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <MessageCircle className="w-4 h-4" />
+                          <span>24 avg</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Eye className="w-4 h-4" />
+                          <span>4.5%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="w-20 h-20 mx-auto bg-[#208CFC]/10 rounded-full mb-4 flex items-center justify-center">
-                      <Sparkles className="w-8 h-8 text-[#208CFC]" />
-                    </div>
-                    <div className="space-y-2">
-                      <div className="h-4 bg-[#208CFC]/10 rounded w-3/4 mx-auto"></div>
-                      <div className="h-3 bg-[#208CFC]/10 rounded w-1/2 mx-auto"></div>
-                    </div>
-                    <div className="mt-4 grid grid-cols-3 gap-2">
-                      <div className="aspect-square bg-[#208CFC]/10 rounded"></div>
-                      <div className="aspect-square bg-[#208CFC]/10 rounded"></div>
-                      <div className="aspect-square bg-[#208CFC]/10 rounded"></div>
+                    <div className="absolute -top-2 -right-2 bg-green-100 text-green-600 text-xs font-medium px-2 py-1 rounded-full flex items-center gap-1">
+                      <TrendingUp className="w-3 h-3" />
+                      +245% Growth
                     </div>
                   </div>
                 </div>
-
-                {/* Floating Elements */}
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white p-3 rounded-lg shadow-lg">
-                  <div className="flex items-center gap-2">
-                    <ArrowLeftRight className="w-5 h-5 text-[#208CFC]" />
-                    <span className="font-medium">Profile Transformation</span>
+                
+                {/* Improvement Metrics */}
+                <div className="mt-8 grid grid-cols-3 gap-4">
+                  <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+                    <div className="w-8 h-8 bg-[#208CFC]/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <Users className="w-4 h-4 text-[#208CFC]" />
+                    </div>
+                    <div className="text-2xl font-bold text-[#208CFC]">+5.1k</div>
+                    <div className="text-sm text-gray-600">New Followers</div>
                   </div>
-                </div>
-
-                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white p-3 rounded-lg shadow-lg">
-                  <div className="flex items-center gap-2">
-                    <Wand2 className="w-5 h-5 text-[#208CFC]" />
-                    <span className="font-medium">AI-Powered Optimization</span>
+                  <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+                    <div className="w-8 h-8 bg-[#208CFC]/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <Target className="w-4 h-4 text-[#208CFC]" />
+                    </div>
+                    <div className="text-2xl font-bold text-[#208CFC]">3.3x</div>
+                    <div className="text-sm text-gray-600">Engagement</div>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg shadow-sm text-center">
+                    <div className="w-8 h-8 bg-[#208CFC]/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <TrendingUp className="w-4 h-4 text-[#208CFC]" />
+                    </div>
+                    <div className="text-2xl font-bold text-[#208CFC]">245%</div>
+                    <div className="text-sm text-gray-600">Growth Rate</div>
                   </div>
                 </div>
               </div>
@@ -257,11 +349,70 @@ export default function ProfileOptimizationPage() {
                 <p className="text-gray-600 mb-8">
                   See the impact of our profile optimization tools through real success stories and transformations.
                 </p>
-                <img 
-                  src="/images/features/profile-transformation.png"
-                  alt="Profile Transformation"
-                  className="rounded-xl shadow-lg"
-                />
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <div className="flex items-center justify-between mb-6">
+                    <h3 className="font-bold text-lg">Success Story</h3>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm text-green-500 font-medium">+245% Growth</span>
+                      <TrendingUp className="w-4 h-4 text-green-500" />
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-6 mb-6">
+                    <div className="space-y-4">
+                      <div className="text-sm font-medium text-gray-500">BEFORE</div>
+                      <div className="space-y-2">
+                        <div className="h-4 bg-gray-100 rounded w-3/4"></div>
+                        <div className="h-4 bg-gray-100 rounded w-1/2"></div>
+                        <div className="h-4 bg-gray-100 rounded w-2/3"></div>
+                      </div>
+                      <div className="flex gap-2">
+                        <div className="flex-1 text-center p-2 bg-gray-50 rounded">
+                          <div className="text-sm text-gray-600">Followers</div>
+                          <div className="font-bold">2.1K</div>
+                        </div>
+                        <div className="flex-1 text-center p-2 bg-gray-50 rounded">
+                          <div className="text-sm text-gray-600">Engagement</div>
+                          <div className="font-bold">1.8%</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <div className="text-sm font-medium text-[#208CFC]">AFTER</div>
+                      <div className="space-y-2">
+                        <div className="h-4 bg-[#208CFC]/10 rounded w-3/4"></div>
+                        <div className="h-4 bg-[#208CFC]/10 rounded w-1/2"></div>
+                        <div className="h-4 bg-[#208CFC]/10 rounded w-2/3"></div>
+                      </div>
+                      <div className="flex gap-2">
+                        <div className="flex-1 text-center p-2 bg-[#208CFC]/5 rounded">
+                          <div className="text-sm text-gray-600">Followers</div>
+                          <div className="font-bold text-[#208CFC]">7.2K</div>
+                        </div>
+                        <div className="flex-1 text-center p-2 bg-[#208CFC]/5 rounded">
+                          <div className="text-sm text-gray-600">Engagement</div>
+                          <div className="font-bold text-[#208CFC]">4.5%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-sm">Optimized bio with clear value proposition</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-sm">Enhanced visual consistency</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-sm">Improved content strategy</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="md:col-span-7">

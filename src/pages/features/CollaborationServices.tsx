@@ -37,9 +37,6 @@ export default function CollaborationServicesPage() {
                     Start Collaborating
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
-                  <button className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#208CFC] text-[#208CFC] rounded-lg font-semibold hover:bg-[#208CFC]/5 transition-colors duration-200">
-                    Watch Demo
-                  </button>
                 </div>
               </div>
 
@@ -285,11 +282,52 @@ export default function CollaborationServicesPage() {
                 <p className="text-gray-600 mb-8">
                   Work together efficiently with your team using our integrated collaboration tools and real-time updates.
                 </p>
-                <img 
-                  src="/images/features/team-collaboration.png"
-                  alt="Team Collaboration"
-                  className="rounded-xl shadow-lg"
-                />
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <div className="flex items-center justify-between mb-6">
+                    <h3 className="font-bold text-lg">Team Activity</h3>
+                    <div className="flex gap-2">
+                      <span className="text-sm text-[#208CFC] font-medium">Live Updates</span>
+                      <div className="w-2 h-2 bg-green-500 rounded-full mt-1.5"></div>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    {[
+                      { user: 'Sarah J.', action: 'Created new post', time: '2m ago', icon: FileText },
+                      { user: 'Mike C.', action: 'Updated schedule', time: '5m ago', icon: Calendar },
+                      { user: 'Alex R.', action: 'Added comments', time: '12m ago', icon: MessageSquare },
+                      { user: 'Emma L.', action: 'Shared assets', time: '15m ago', icon: Users }
+                    ].map((activity, i) => (
+                      <div key={i} className="flex items-center gap-4 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                        <div className="w-8 h-8 bg-[#208CFC]/10 rounded-full flex items-center justify-center">
+                          <activity.icon className="w-4 h-4 text-[#208CFC]" />
+                        </div>
+                        <div className="flex-1">
+                          <div className="flex items-center justify-between">
+                            <span className="font-medium">{activity.user}</span>
+                            <span className="text-sm text-gray-500">{activity.time}</span>
+                          </div>
+                          <span className="text-sm text-gray-600">{activity.action}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-6 pt-6 border-t">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-gray-600">Team Performance</span>
+                      <span className="text-[#208CFC] font-medium">+32% this week</span>
+                    </div>
+                    <div className="mt-4 h-16 flex items-end justify-between">
+                      {[65, 85, 55, 90, 75, 95, 70].map((height, i) => (
+                        <div key={i} className="w-8 bg-[#208CFC]/20 rounded-t-sm">
+                          <div
+                            className="w-full bg-[#208CFC] rounded-t-sm transition-all duration-300"
+                            style={{ height: `${height}%` }}
+                          ></div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="md:col-span-7">

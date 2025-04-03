@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import { Users, TrendingUp, BarChart4, Target, Sparkles, BarChart, Clock, ArrowRight } from 'lucide-react'
+import { Users, TrendingUp, BarChart4, Target, Sparkles, BarChart, Clock, ArrowRight, LineChart } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 export default function NicheResearchPage() {
@@ -221,11 +221,73 @@ export default function NicheResearchPage() {
                 <p className="text-gray-600 mb-8">
                   Make informed decisions about your content strategy with real-time market data and competitor analysis.
                 </p>
-                <img 
-                  src="/images/features/analytics-dashboard.png"
-                  alt="Analytics Dashboard"
-                  className="rounded-xl shadow-lg"
-                />
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-bold text-lg">Analytics Overview</h3>
+                    <div className="flex gap-2">
+                      <button className="p-2 rounded bg-[#208CFC]/10 text-[#208CFC]">
+                        <LineChart className="w-4 h-4" />
+                      </button>
+                      <button className="p-2 rounded bg-[#208CFC]/10 text-[#208CFC]">
+                        <BarChart className="w-4 h-4" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-sm text-gray-600">Engagement Rate</span>
+                        <span className="text-sm font-medium text-[#208CFC]">4.8%</span>
+                      </div>
+                      <div className="h-2 bg-gray-100 rounded-full">
+                        <div className="h-2 bg-[#208CFC] rounded-full" style={{ width: '75%' }}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-sm text-gray-600">Growth Rate</span>
+                        <span className="text-sm font-medium text-[#208CFC]">32%</span>
+                      </div>
+                      <div className="h-2 bg-gray-100 rounded-full">
+                        <div className="h-2 bg-[#208CFC] rounded-full" style={{ width: '32%' }}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-sm text-gray-600">Market Share</span>
+                        <span className="text-sm font-medium text-[#208CFC]">28%</span>
+                      </div>
+                      <div className="h-2 bg-gray-100 rounded-full">
+                        <div className="h-2 bg-[#208CFC] rounded-full" style={{ width: '28%' }}></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-6 pt-6 border-t">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-gray-600">Weekly Performance</span>
+                      <span className="text-[#208CFC] font-medium">+24%</span>
+                    </div>
+                    <div className="mt-4 h-24 flex items-end justify-between">
+                      {[35, 45, 30, 65, 40, 50, 45].map((height, i) => (
+                        <div key={i} className="w-8 bg-[#208CFC]/20 rounded-t-sm">
+                          <div
+                            className="w-full bg-[#208CFC] rounded-t-sm transition-all duration-300"
+                            style={{ height: `${height}%` }}
+                          ></div>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="mt-2 flex justify-between text-xs text-gray-400">
+                      <span>Mon</span>
+                      <span>Tue</span>
+                      <span>Wed</span>
+                      <span>Thu</span>
+                      <span>Fri</span>
+                      <span>Sat</span>
+                      <span>Sun</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="col-span-2">

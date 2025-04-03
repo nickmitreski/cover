@@ -22,7 +22,7 @@ export default function TemplatesPage() {
               Perfect for posts, stories, and reels across all platforms.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Link to="/signup" className="btn btn-primary">
+              <Link to="/signup" className="btn btn-primary btn-lg hover:scale-105 transition-transform">
                 Get Started
               </Link>
               <Link to="/demo" className="btn btn-outline">

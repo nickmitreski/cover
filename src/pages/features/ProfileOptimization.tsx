@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import { ArrowRight, Sparkles, Target, TrendingUp, Eye, Camera, Layout, Palette, Brush, Wand2, LineChart, ArrowLeftRight, Shuffle, CheckCircle, Heart, MessageCircle, Users } from 'lucide-react'
+import { ArrowRight, Sparkles, Target, TrendingUp, Eye, Camera, Layout, Palette, Brush, Wand2, LineChart, CheckCircle, MessageCircle, Users, Heart, Shuffle } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 export default function ProfileOptimizationPage() {

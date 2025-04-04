@@ -28,51 +28,13 @@ export default function ContentGeneratorPage() {
                 Not sure what to post? Our AI Content Generator delivers new post ideas, content structures, and creative inspiration based on trending topics in your niche.
               </p>
               
-              <div className="mt-10">
+              <div className="mt-10 space-y-4">
                 <button 
-                  className="w-full sm:w-auto px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200 inline-block"
-                  onClick={() => {}}
-                >
-                  Generate Content Now
-                </button>
-              </div>
-
-              <div className="mt-2 flex gap-2">
-                <button 
-                  className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors"
-                  onClick={() => {}}
-                >
-                  Use This
-                </button>
-                <button 
-                  className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors"
-                  onClick={() => {}}
-                >
-                  Generate More
-                </button>
-              </div>
-
-              <button 
-                className="mt-6 w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
-                onClick={() => {}}
-              >
-                <Sparkles className="w-5 h-5" />
-                Generate More Ideas
-              </button>
-
-              <div className="mt-6 flex gap-3">
-                <button 
-                  className="flex-1 py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-8 py-4 bg-[#208CFC] text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
                   onClick={() => {}}
                 >
                   <Sparkles className="w-5 h-5" />
-                  Generate
-                </button>
-                <button 
-                  className="px-3 py-3 bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition-colors duration-200"
-                  onClick={() => {}}
-                >
-                  <Settings className="w-5 h-5" />
+                  Generate Content Now
                 </button>
               </div>
             </div>
@@ -91,6 +53,7 @@ export default function ContentGeneratorPage() {
                 </div>
 
                 <div className="space-y-4">
+                  {/* Content Ideas */}
                   <div className="bg-gray-50 rounded-lg p-4 transform hover:-translate-y-1 transition-transform duration-200">
                     <div className="flex items-center gap-2 mb-2">
                       <ImageIcon className="w-4 h-4 text-[#208CFC]" />
@@ -102,6 +65,7 @@ export default function ContentGeneratorPage() {
                       <span className="px-2 py-1 bg-[#208CFC]/10 text-[#208CFC] text-xs rounded-full">#routine</span>
                     </div>
                   </div>
+
                   <div className="bg-gray-50 rounded-lg p-4 transform hover:-translate-y-1 transition-transform duration-200">
                     <div className="flex items-center gap-2 mb-2">
                       <Layout className="w-4 h-4 text-[#208CFC]" />
@@ -113,6 +77,7 @@ export default function ContentGeneratorPage() {
                       <span className="px-2 py-1 bg-[#208CFC]/10 text-[#208CFC] text-xs rounded-full">#creative</span>
                     </div>
                   </div>
+
                   <div className="bg-gray-50 rounded-lg p-4 transform hover:-translate-y-1 transition-transform duration-200">
                     <div className="flex items-center gap-2 mb-2">
                       <Type className="w-4 h-4 text-[#208CFC]" />
@@ -126,15 +91,37 @@ export default function ContentGeneratorPage() {
                   </div>
                 </div>
 
-                <button className="mt-6 w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2">
-                  <Sparkles className="w-5 h-5" />
-                  Generate More Ideas
-                </button>
-              </div>
+                <div className="mt-6 space-y-4">
+                  <button 
+                    className="w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
+                    onClick={() => {}}
+                  >
+                    <Sparkles className="w-5 h-5" />
+                    Generate More Ideas
+                  </button>
 
-              {/* Decorative Elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#208CFC]/10 rounded-full"></div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-100 rounded-full"></div>
+                  <div className="flex gap-3">
+                    <button 
+                      className="flex-1 py-3 bg-[#208CFC]/10 text-[#208CFC] rounded-lg font-medium hover:bg-[#208CFC]/20 transition-colors duration-200"
+                      onClick={() => {}}
+                    >
+                      Use This
+                    </button>
+                    <button 
+                      className="flex-1 py-3 bg-[#208CFC]/10 text-[#208CFC] rounded-lg font-medium hover:bg-[#208CFC]/20 transition-colors duration-200"
+                      onClick={() => {}}
+                    >
+                      Generate More
+                    </button>
+                    <button 
+                      className="px-3 py-3 bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition-colors duration-200"
+                      onClick={() => {}}
+                    >
+                      <Settings className="w-5 h-5" />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -156,57 +143,59 @@ export default function ContentGeneratorPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Left Column - Feature Cards */}
               <div className="space-y-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
                       <Brain className="w-6 h-6 text-[#208CFC]" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-2">Smart Ideation</h3>
-                      <p className="text-gray-600 mb-4">Get AI-powered content suggestions based on trending topics and your audience's interests.</p>
-                      <div className="bg-gray-50 rounded-lg p-4">
-                        <div className="flex items-center gap-2 mb-3">
-                          <Sparkles className="w-4 h-4 text-[#208CFC]" />
-                          <span className="text-sm font-medium">Trending Topics</span>
-                        </div>
-                        <div className="space-y-2">
-                          <div className="flex items-center gap-2">
-                            <Star className="w-4 h-4 text-[#208CFC]" />
-                            <span className="text-sm text-gray-600">Instagram Growth Strategies</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <Star className="w-4 h-4 text-[#208CFC]" />
-                            <span className="text-sm text-gray-600">Content Creation Tips</span>
-                          </div>
-                        </div>
+                      <h3 className="text-xl font-semibold">Smart Ideation</h3>
+                      <p className="text-gray-600 text-sm">Get AI-powered content suggestions based on trending topics and your audience's interests.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-6 space-y-4">
+                    <div className="flex items-center gap-2">
+                      <Sparkles className="w-4 h-4 text-[#208CFC]" />
+                      <span className="text-sm font-medium">Trending Topics</span>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <Star className="w-4 h-4 text-[#208CFC]" />
+                        <span className="text-sm text-gray-600">Instagram Growth Strategies</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Star className="w-4 h-4 text-[#208CFC]" />
+                        <span className="text-sm text-gray-600">Content Creation Tips</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
                       <Lightbulb className="w-6 h-6 text-[#208CFC]" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-2">Creative Prompts</h3>
-                      <p className="text-gray-600 mb-4">Overcome writer's block with AI-generated prompts and content frameworks.</p>
-                      <div className="bg-gray-50 rounded-lg p-4">
-                        <div className="flex items-center gap-2 mb-3">
-                          <Wand2 className="w-4 h-4 text-[#208CFC]" />
-                          <span className="text-sm font-medium">Content Frameworks</span>
-                        </div>
-                        <div className="space-y-2">
-                          <div className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-[#208CFC]" />
-                            <span className="text-sm text-gray-600">Story-Based Posts</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-[#208CFC]" />
-                            <span className="text-sm text-gray-600">How-To Guides</span>
-                          </div>
-                        </div>
+                      <h3 className="text-xl font-semibold">Creative Prompts</h3>
+                      <p className="text-gray-600 text-sm">Overcome writer's block with AI-generated prompts and content frameworks.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-6 space-y-4">
+                    <div className="flex items-center gap-2">
+                      <Wand2 className="w-4 h-4 text-[#208CFC]" />
+                      <span className="text-sm font-medium">Content Frameworks</span>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-[#208CFC]" />
+                        <span className="text-sm text-gray-600">Story-Based Posts</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-[#208CFC]" />
+                        <span className="text-sm text-gray-600">How-To Guides</span>
                       </div>
                     </div>
                   </div>
@@ -217,7 +206,7 @@ export default function ContentGeneratorPage() {
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-[#208CFC]/10 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                       <MessageSquare className="w-5 h-5 text-[#208CFC]" />
                     </div>
                     <div>
@@ -230,13 +219,13 @@ export default function ContentGeneratorPage() {
                   </button>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-6">
                   <div className="flex gap-3">
-                    <div className="w-8 h-8 bg-[#208CFC]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Brain className="w-4 h-4 text-[#208CFC]" />
                     </div>
-                    <div className="flex-1 bg-gray-50 rounded-lg p-4">
-                      <p className="text-gray-600">What type of content would you like to create?</p>
+                    <div className="flex-1">
+                      <p className="text-gray-600 mb-2">What type of content would you like to create?</p>
                     </div>
                   </div>
 
@@ -254,20 +243,20 @@ export default function ContentGeneratorPage() {
                   </div>
 
                   <div className="flex gap-3">
-                    <div className="w-8 h-8 bg-[#208CFC]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Sparkles className="w-4 h-4 text-[#208CFC]" />
                     </div>
-                    <div className="flex-1 bg-[#208CFC]/5 rounded-lg p-4">
+                    <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">
                         <Star className="w-4 h-4 text-[#208CFC]" />
                         <span className="font-medium">Suggested Topic</span>
                       </div>
-                      <p className="text-gray-800">"How to Create Viral Reels: Step-by-Step Guide 🎥"</p>
-                      <div className="mt-3 flex gap-2">
-                        <button className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors">
+                      <p className="text-gray-800 mb-3">"How to Create Viral Reels: Step-by-Step Guide 🎥"</p>
+                      <div className="flex gap-2">
+                        <button className="px-4 py-2 bg-blue-100 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors">
                           Use This
                         </button>
-                        <button className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors">
+                        <button className="px-4 py-2 bg-blue-100 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors">
                           Generate More
                         </button>
                       </div>
@@ -275,51 +264,33 @@ export default function ContentGeneratorPage() {
                   </div>
                 </div>
 
-                <button 
-                  className="mt-6 w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
-                  onClick={() => {}}
-                >
-                  <Sparkles className="w-5 h-5" />
-                  Generate More Variations
-                </button>
-
-                <div className="mt-6 flex gap-3">
+                <div className="mt-8">
                   <button 
-                    className="flex-1 py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
-                    onClick={() => {}}
+                    className="w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
+                  >
+                    <Sparkles className="w-5 h-5" />
+                    Generate More Variations
+                  </button>
+                </div>
+
+                <div className="mt-4">
+                  <button 
+                    className="w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center gap-2"
                   >
                     <Sparkles className="w-5 h-5" />
                     Generate
                   </button>
-                  <button 
-                    className="px-3 py-3 bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition-colors duration-200"
-                    onClick={() => {}}
-                  >
-                    <Settings className="w-5 h-5" />
-                  </button>
                 </div>
 
-                <button 
-                  className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors"
-                  onClick={() => {}}
-                >
-                  Use This
-                </button>
-                <button 
-                  className="px-3 py-1.5 bg-[#208CFC]/10 text-[#208CFC] rounded-lg text-sm font-medium hover:bg-[#208CFC]/20 transition-colors"
-                  onClick={() => {}}
-                >
-                  Generate More
-                </button>
-
-                {/* Keep the final CTA as a Link */}
-                <Link 
-                  to="/signup"
-                  className="inline-flex items-center px-8 py-4 bg-[#208CFC] text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200"
-                >
-                  Start Creating
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
+                <div className="mt-8 flex justify-center">
+                  <Link 
+                    to="/signup"
+                    className="inline-flex items-center px-6 py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200"
+                  >
+                    Start Creating
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -446,7 +417,7 @@ export default function ContentGeneratorPage() {
       </section>
       
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gray-100">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6">
@@ -457,10 +428,10 @@ export default function ContentGeneratorPage() {
             </p>
             <Link 
               to="/signup"
-              className="inline-flex items-center px-8 py-4 bg-[#208CFC] text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200"
+              className="inline-flex items-center px-8 py-4 bg-[#208CFC] text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200 group"
             >
               Start Creating
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>

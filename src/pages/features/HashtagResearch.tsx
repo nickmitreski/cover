@@ -27,7 +27,7 @@ export default function HashtagResearchPage() {
             </p>
             
             <div className="mt-10 opacity-0 animate-[slideIn_0.5s_ease-out_0.8s_forwards]">
-              <Link to="/signup" className="w-full sm:w-auto px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200 inline-block">
+              <Link to="/signup" className="w-full sm:w-auto px-8 py-4 bg-black text-white rounded-lg font-semibold cursor-default inline-block">
                 Research Hashtags
               </Link>
             </div>
@@ -154,7 +154,7 @@ export default function HashtagResearchPage() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-            <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
               <div className="text-[#208CFC] mb-6">
                 <Hash className="w-12 h-12" />
               </div>
@@ -166,7 +166,7 @@ export default function HashtagResearchPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
               <div className="text-[#208CFC] mb-6">
                 <TrendingUp className="w-12 h-12" />
               </div>
@@ -178,7 +178,7 @@ export default function HashtagResearchPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
               <div className="text-[#208CFC] mb-6">
                 <Target className="w-12 h-12" />
               </div>
@@ -244,7 +244,7 @@ export default function HashtagResearchPage() {
 
               <div className="col-span-2">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <TrendingUp className="w-6 h-6 text-[#208CFC]" />
                     </div>
@@ -268,7 +268,7 @@ export default function HashtagResearchPage() {
                     </div>
                   </div>
 
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <Users className="w-6 h-6 text-[#208CFC]" />
                     </div>
@@ -289,7 +289,7 @@ export default function HashtagResearchPage() {
                     </div>
                   </div>
 
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <Activity className="w-6 h-6 text-[#208CFC]" />
                     </div>
@@ -317,7 +317,7 @@ export default function HashtagResearchPage() {
                     </div>
                   </div>
 
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <Search className="w-6 h-6 text-[#208CFC]" />
                     </div>

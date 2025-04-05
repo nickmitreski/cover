@@ -32,7 +32,7 @@ export default function CollaborationServicesPage() {
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
                   <Link 
                     to="/signup"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-[#208CFC] text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-[#208CFC] text-white rounded-lg font-semibold cursor-default"
                   >
                     Start Collaborating
                     <ArrowRight className="ml-2 w-5 h-5" />
@@ -46,10 +46,10 @@ export default function CollaborationServicesPage() {
                   <div className="flex items-center justify-between mb-6">
                     <h3 className="text-lg font-semibold">Content Calendar</h3>
                     <div className="flex items-center gap-4">
-                      <button className="p-2 hover:bg-gray-100 rounded-lg">
+                      <button className="p-2 rounded-lg cursor-default">
                         <Bell className="w-5 h-5 text-gray-500" />
                       </button>
-                      <button className="p-2 hover:bg-gray-100 rounded-lg">
+                      <button className="p-2 rounded-lg cursor-default">
                         <Settings className="w-5 h-5 text-gray-500" />
                       </button>
                     </div>

@@ -23,11 +23,11 @@ export default function ContentPlanPage() {
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="text-lg font-semibold">Content Calendar</h3>
                   <div className="flex items-center gap-2">
-                    <button className="p-2 hover:bg-gray-100 rounded-lg">
+                    <button className="p-2 rounded-lg cursor-default">
                       <ChevronLeft className="w-5 h-5 text-gray-600" />
                     </button>
                     <span className="font-medium">March 2024</span>
-                    <button className="p-2 hover:bg-gray-100 rounded-lg">
+                    <button className="p-2 rounded-lg cursor-default">
                       <ChevronRight className="w-5 h-5 text-gray-600" />
                     </button>
                   </div>
@@ -49,7 +49,7 @@ export default function ContentPlanPage() {
                         key={i}
                         className={`aspect-square p-2 rounded-lg border ${
                           day > 0 && day <= 31
-                            ? 'border-gray-200 hover:border-[#208CFC] cursor-pointer'
+                            ? 'border-gray-200 cursor-default'
                             : 'border-transparent text-gray-400'
                         } ${day === 15 ? 'bg-[#208CFC]/10 border-[#208CFC]' : ''}`}
                       >
@@ -112,7 +112,7 @@ export default function ContentPlanPage() {
               <div className="mt-10">
                 <Link
                   to="/signup"
-                  className="inline-flex items-center px-6 py-3 bg-[#208CFC] text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200"
+                  className="inline-flex items-center px-6 py-3 bg-[#208CFC] text-white rounded-lg font-semibold cursor-default"
                 >
                   Start Planning
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -136,7 +136,7 @@ export default function ContentPlanPage() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-            <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
               <div className="text-[#208CFC] mb-6">
                 <Calendar className="w-12 h-12" />
               </div>
@@ -148,7 +148,7 @@ export default function ContentPlanPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
               <div className="text-[#208CFC] mb-6">
                 <BarChart4 className="w-12 h-12" />
               </div>
@@ -160,7 +160,7 @@ export default function ContentPlanPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
               <div className="text-[#208CFC] mb-6">
                 <Target className="w-12 h-12" />
               </div>

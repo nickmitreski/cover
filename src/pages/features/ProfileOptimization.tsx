@@ -32,7 +32,7 @@ export default function ProfileOptimizationPage() {
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
                   <Link 
                     to="/signup"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-[#208CFC] text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-[#208CFC] text-white rounded-lg font-semibold cursor-default"
                   >
                     Start Optimization
                     <ArrowRight className="ml-2 w-5 h-5" />
@@ -133,14 +133,14 @@ export default function ProfileOptimizationPage() {
                         <div className="h-3 bg-[#208CFC]/10 rounded w-2/3"></div>
                       </div>
                       <div className="grid grid-cols-3 gap-2">
-                        <div className="aspect-square bg-[#208CFC]/10 rounded relative group">
-                          <div className="absolute inset-0 bg-[#208CFC]/20 rounded opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="aspect-square bg-[#208CFC]/10 rounded relative">
+                          <div className="absolute inset-0 bg-[#208CFC]/20 rounded opacity-0"></div>
                         </div>
-                        <div className="aspect-square bg-[#208CFC]/10 rounded relative group">
-                          <div className="absolute inset-0 bg-[#208CFC]/20 rounded opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="aspect-square bg-[#208CFC]/10 rounded relative">
+                          <div className="absolute inset-0 bg-[#208CFC]/20 rounded opacity-0"></div>
                         </div>
-                        <div className="aspect-square bg-[#208CFC]/10 rounded relative group">
-                          <div className="absolute inset-0 bg-[#208CFC]/20 rounded opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="aspect-square bg-[#208CFC]/10 rounded relative">
+                          <div className="absolute inset-0 bg-[#208CFC]/20 rounded opacity-0"></div>
                         </div>
                       </div>
                       <div className="flex items-center justify-between text-sm text-[#208CFC] pt-2">
@@ -325,7 +325,7 @@ export default function ProfileOptimizationPage() {
                       <p className="text-sm text-gray-600">Personalized suggestions for improvement</p>
                     </div>
                   </div>
-                  <button className="w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200">
+                  <button className="w-full py-3 bg-[#208CFC] text-white rounded-lg font-medium cursor-default">
                     Generate Suggestions
                   </button>
                 </div>

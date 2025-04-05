@@ -35,7 +35,7 @@ export default function CollaborationPage() {
                     {String.fromCharCode(65 + i)}
                   </div>
                 ))}
-                <button className="w-8 h-8 bg-gray-100 rounded-full border-2 border-white flex items-center justify-center">
+                <button className="w-8 h-8 bg-gray-100 rounded-full border-2 border-white flex items-center justify-center cursor-default">
                   <UserPlus className="w-4 h-4 text-gray-600" />
                 </button>
               </div>
@@ -46,10 +46,10 @@ export default function CollaborationPage() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <button className="p-2 hover:bg-gray-50 rounded-lg">
+              <button className="p-2 rounded-lg cursor-default">
                 <Bell className="w-5 h-5 text-gray-600" />
               </button>
-              <button className="p-2 hover:bg-gray-50 rounded-lg">
+              <button className="p-2 rounded-lg cursor-default">
                 <Calendar className="w-5 h-5 text-gray-600" />
               </button>
             </div>
@@ -85,11 +85,11 @@ export default function CollaborationPage() {
               <div className="mt-8">
                 <h4 className="text-sm font-medium text-gray-600 mb-3">Quick Actions</h4>
                 <div className="grid grid-cols-2 gap-3">
-                  <button className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                  <button className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg cursor-default">
                     <MessageSquare className="w-4 h-4 text-[#208CFC]" />
                     <span className="text-sm">New Post</span>
                   </button>
-                  <button className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                  <button className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg cursor-default">
                     <Calendar className="w-4 h-4 text-[#208CFC]" />
                     <span className="text-sm">Schedule</span>
                   </button>

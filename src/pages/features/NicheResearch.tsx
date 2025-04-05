@@ -33,7 +33,7 @@ export default function NicheResearchPage() {
 
             {/* Floating Stats Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+              <div className="bg-white rounded-xl shadow-lg p-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#208CFC]/10 rounded-full flex items-center justify-center">
                     <Target className="w-6 h-6 text-[#208CFC]" />
@@ -45,7 +45,7 @@ export default function NicheResearchPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+              <div className="bg-white rounded-xl shadow-lg p-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#208CFC]/10 rounded-full flex items-center justify-center">
                     <BarChart4 className="w-6 h-6 text-[#208CFC]" />
@@ -57,7 +57,7 @@ export default function NicheResearchPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+              <div className="bg-white rounded-xl shadow-lg p-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#208CFC]/10 rounded-full flex items-center justify-center">
                     <Sparkles className="w-6 h-6 text-[#208CFC]" />
@@ -292,7 +292,7 @@ export default function NicheResearchPage() {
 
               <div className="col-span-2">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <TrendingUp className="w-6 h-6 text-[#208CFC]" />
                     </div>
@@ -300,7 +300,7 @@ export default function NicheResearchPage() {
                     <p className="text-gray-600">Stay ahead of market trends with AI-powered trend detection and analysis.</p>
                   </div>
 
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <Target className="w-6 h-6 text-[#208CFC]" />
                     </div>
@@ -308,7 +308,7 @@ export default function NicheResearchPage() {
                     <p className="text-gray-600">Understand your target audience's preferences and behavior patterns.</p>
                   </div>
 
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <BarChart4 className="w-6 h-6 text-[#208CFC]" />
                     </div>
@@ -316,7 +316,7 @@ export default function NicheResearchPage() {
                     <p className="text-gray-600">Track key metrics and measure your content's impact on engagement.</p>
                   </div>
 
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <Target className="w-6 h-6 text-[#208CFC]" />
                     </div>

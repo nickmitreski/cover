@@ -27,7 +27,7 @@ export default function InstagramCoachingPage() {
             </p>
 
             <div className="mt-10 opacity-0 animate-[slideIn_0.5s_ease-out_0.8s_forwards]">
-              <Link to="/signup" className="w-full sm:w-auto px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200 inline-block">
+              <Link to="/signup" className="w-full sm:w-auto px-8 py-4 bg-black text-white rounded-lg font-semibold cursor-default inline-block">
                 Start Your Journey
               </Link>
             </div>
@@ -92,7 +92,7 @@ export default function InstagramCoachingPage() {
                               <span className="text-sm text-gray-600">12 Participants</span>
                             </div>
                           </div>
-                          <button className="mt-4 w-full bg-[#208CFC] text-white rounded-lg py-2 text-sm font-medium flex items-center justify-center gap-2">
+                          <button className="mt-4 w-full bg-[#208CFC] text-white rounded-lg py-2 text-sm font-medium flex items-center justify-center gap-2 cursor-default">
                             <Play className="w-4 h-4" />
                             Join Session
                           </button>
@@ -152,7 +152,7 @@ export default function InstagramCoachingPage() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
               <div className="text-[#208CFC] mb-6">
                 <BookOpen className="w-12 h-12" />
               </div>
@@ -162,7 +162,7 @@ export default function InstagramCoachingPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
               <div className="text-[#208CFC] mb-6">
                 <Video className="w-12 h-12" />
               </div>
@@ -172,7 +172,7 @@ export default function InstagramCoachingPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl shadow-sm">
               <div className="text-[#208CFC] mb-6">
                 <MessageSquare className="w-12 h-12" />
               </div>
@@ -224,7 +224,7 @@ export default function InstagramCoachingPage() {
                         </div>
                       </div>
                     </div>
-                    <button className="w-full bg-[#208CFC] text-white rounded-lg py-2 text-sm font-medium flex items-center justify-center gap-2">
+                    <button className="w-full bg-[#208CFC] text-white rounded-lg py-2 text-sm font-medium flex items-center justify-center gap-2 cursor-default">
                       <Play className="w-4 h-4" />
                       Join Meeting
                     </button>
@@ -235,7 +235,7 @@ export default function InstagramCoachingPage() {
               <div className="col-span-2">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {/* Growth Strategy */}
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <Target className="w-6 h-6 text-[#208CFC]" />
                     </div>
@@ -264,7 +264,7 @@ export default function InstagramCoachingPage() {
                   </div>
 
                   {/* Progress Tracking */}
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <TrendingUp className="w-6 h-6 text-[#208CFC]" />
                     </div>
@@ -286,7 +286,7 @@ export default function InstagramCoachingPage() {
                   </div>
 
                   {/* Achievements */}
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <Award className="w-6 h-6 text-[#208CFC]" />
                     </div>
@@ -313,7 +313,7 @@ export default function InstagramCoachingPage() {
                   </div>
 
                   {/* Session History */}
-                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
                     <div className="w-12 h-12 bg-[#208CFC]/10 rounded-lg flex items-center justify-center mb-4">
                       <Clock className="w-6 h-6 text-[#208CFC]" />
                     </div>
